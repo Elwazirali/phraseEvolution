@@ -1,0 +1,30 @@
+/* Styles go here */
+
+.solutionContainer
+{
+  width:70%;
+}
+body
+{
+  background:url(http://i.imgur.com/h5FzGp8.jpg);
+  background-attachment:fixed;
+	background-size:100% 100%;
+	background-repeat: repeat-x;
+}
+.solution
+{
+  background-color:white;
+}
+.btn-warning
+{
+  margin-top:2em;
+}
+h4
+{
+  font-weight:500;
+}
+.name
+{
+  position:fixed;	
+  padding-left:10px;
+}

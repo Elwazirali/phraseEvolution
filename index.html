@@ -1,1 +1,57 @@
-My Page
+<!DOCTYPE html>
+<html ng-app="app">
+  
+  <head>
+    
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="application.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+    
+    <h4 class="name">Developed by <a href="http://alielwazir.me">
+       Ali Elwazir</a></h4>
+    <div class="container">
+      
+      <h1 class="text-center">Evolution of a phrase</h1>
+      <h4 class="text-center">A simple
+      simulation of evolution by cumulative selection. Type in a sentence,
+      and the computer algorithm will generate random phrases. The letters that
+      'survive' in the randomly generated phrase are the ones which resemble
+      the target. You will notice that after several 'generations' of sentences,
+      the generated phrases start to resemble the target more and more.
+      "Random variation, nonrandom selection".
+      This evolution algorithm was inspired by professor 
+      <a href="https://richarddawkins.net/">Richard Dawkins</a> in his book
+      <a href = "https://www.wikiwand.com/en/The_Blind_Watchmaker">The blind Watch Maker</a>
+      
+      </h4>
+      
+      <form name="calc" ng-submit="displaying()" class="text-center">
+        <input type = "name" value="hello" ng-model="outcome">
+        <input class="btn-primary" type="submit" value="Create">
+      </form>
+      
+      
+      <form name="calc" ng-submit="clear()" class="text-center">
+        <input class="btn-warning" type="submit" value="clear">
+      </form>
+      
+      <div class="container ">
+       <p class="text-center solution">  {{obj.creature}} {{obj.cels}} </p>
+
+      </div>
+    </div>    
+
+  <style>
+
+  
+  
+  </style>
+    
+  </body>
+
+</html>
