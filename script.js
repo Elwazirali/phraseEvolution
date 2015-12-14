@@ -29,7 +29,7 @@ var MainController = function($scope) {
     var tries = [];
     var i = 0;
     
-    
+    window.scrollBy(0, 100);
     
     for(var i = 0; i<sentence.length; i++)
     {
